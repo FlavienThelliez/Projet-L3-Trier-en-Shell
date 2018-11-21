@@ -1,16 +1,45 @@
 #!/bin/bash
 
+function tri_n(){
+    echo "Tri par nom"
+    find
+}
+function tri_s(){
+    echo "Tri par taille"
+}
+function tri_m(){
+    echo "Tri par date"
+}
+function tri_l(){
+    echo "Tri par nb lignes"
+}
+function tri_e(){
+    echo "Tri par extension"
+}
+function tri_t(){
+    echo "Tri par type de fichier"
+}
+function tri_p(){
+    echo "Tri par propriétaire"
+}
+function tri_g(){
+    echo "Tri par groupe propriétaire"
+}
 
 
+arg_r=false
+arg_d=false
 
 while [ $# -gt 1 ]
 do
     case $1 in
 	-R)
 	    echo "Tri des sous-répertoire"
+	    arg_r=true 
 	    ;;
 	-d)
 	    echo "Tri dans l'ordre décroissant"
+	    arg_d=true
 	    ;;
 	-*)
 	    echo "Autre option"
@@ -27,28 +56,3 @@ done
 rep=$1
 echo "Affichage du répertoire $rep"
 
-
-function tri_n(){
-    
-}
-function tri_s(){
-    
-}
-function tri_m(){
-    
-}
-function tri_l(){
-    
-}
-function tri_e(){
-    
-}
-function tri_t(){
-    
-}
-function tri_p(){
-    
-}
-function tri_g(){
-    
-}
