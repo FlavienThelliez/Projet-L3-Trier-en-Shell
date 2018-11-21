@@ -2,4 +2,12 @@
 Projet L3, à finir pour le 4 Décembre 2018.
 Pouvant etre utile:
 
-find . -maxdepth 1 | cut -c3-
+Dans le fichier trishell.sh
+j'ai crée des fonctions qui permettent de creer un tableau de fichier en passant un repertoire en paramètre
+j'ai une fonction swap fonctionnel qui prend un tableau (qui est juste une chaine traité comme) et deux indice i1 et i2
+j'ai une derniere fonction qui quand à elle prend le tableau (toujours la chaine) et qui crée un 2eme tableau contenant les repertoires de ce premier tableau
+
+on a donc toute la partie tableau de crée pour la partie tri 
+
+Me faire des issues si il te faut des fonctions en rapport avec l'aspect tableau
+
