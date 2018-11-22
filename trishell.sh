@@ -89,11 +89,87 @@ identifieRep(){
     echo $reps    
 }
 
+triSelection(){ #triselection chaine nbElement chaineTri
+    local chaine=$1
+    local enCours=1
+    local plusPetit
+    local j=1
+    local e1
+    local e2
+    local bool
+    while [ $enCours -lt $2 ]
+    do 
+        plusPetit=$enCours
+        echo "enCours au debut du while = $enCours"
+	j=$enCours
+	while [ $j -lt $2 ]
+	do
+	    echo "j au debut du while = $j"
+            e1=`getIndiceI $chaine $j`
+            e2=`getIndiceI $chaine $plusPetit`
+	    echo "e1 = tab[$j] = $e1"
+	    echo "e2 = tab[$plusPetit] = $e2"
+	    bool=compare e1 e2 $3
+	    if [ $bool -eq -1 ]
+	    then 
+		echo "e1 < e2"
+		plusPetit=$j
+    	    fi
+	    echo "plusPetit = $plusPetit à la fin de la boucle"
+	    j=$((j+1))
+	done
+	chaine=`swap $chaine $enCours $plusPetit`
+	echo "chaine = $chaine"
+	enCours=$((enCours+1))
+    done	
+    echo $chaine
+}
+
+compare (){ #e1 #e2 #chaineTri
+    local triActuel=`echo $3 | cut -c1`
+    #Pour chaque cas, on va faire la bonne comparaison en question 
+    #si e1 > e2 faire echo 1
+    #si e2 > e1 faire echo -1
+    #si e1 = e2 
+    #    si chaineTri moins son premier caractere = ""
+    #        alors on retourne 0
+    #    sinon 
+    #        on relance compare avec e1 e2 et chaineTri moins son premier caractere
+    #(pour les découpes de chaineTri, on fait `echo chaineTri | cut -c2-`
+    #ca renvoie la chaine de tri sans son premier caractere)
+
+
+    #cas si triactuel = n
+
+    #cas si triactuel = s
+
+
+    #cas si triactuel = m
+
+
+    #cas si triactuel = l
+
+
+    #cas si triactuel = e
+
+
+    #cas si triactuel = t
+
+
+    #cas si triactuel = p
+
+
+    #cas si triactuel = g
+
+}
+
+
 init=$1
 res=`creeTab $init`
 chaine=`extraitChaine $res`
 nbElem=`extraitNbElement $res`
-res=`identifieRep $chaine $nbElem`
-reps=`extraitChaine $res`
-nbReps=`extraitNbElement $res`
-parcoursTab $reps $nbReps
+echo $chaine
+chaine=`swap $chaine 2 5`
+echo $chaine
+triSelection $chaine $nbElem
+
