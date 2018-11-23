@@ -1,31 +1,6 @@
 #!/bin/bash
-# /mnt/c/Users/christopher/desktop/projetShell/
 
-#Fonction dont on dispose dans ce projet pur l'instant
-
-#creeTab() qui prend en argument un repertoire et qui retourne une chaine
-#contenant le tableau et le nombre d'element de ce tableau séparé par un ;
-
-
-#extraitChaine() qui prend en argument une chaine issu de creeTab et qui renvoie le 
-#tableau associé
-
-#extraitNbElement() qui prend en argument une chaine issu de creeTab et qui renvoie le 
-#nbElement associé
-
-#getIndiceI() qui prend en argument une chaine S et indice I et qui retourne l'element 
-#à l'indice I du tableau S /!\ les indices vont de 1 à nbElement du tableau
-
-#parcoursTab() qui prend en argument une chaine S et un nombre d'element nbElem et qui
-#affiche tous les elements de S
-
-#swap() qui prend en argument une chaine S et deux indice I1 et I2, cette fonction
-#retourne une chaine similaire à S mais avec I1 et I2 inversé
-
-#identifieRep() qui prend en argument un tableau S (le tableau donné par creeTab) et
-#qui renvoie une chaine avec le meme fonctionnement que celle renvoyé par creeTab cad
-#un tableau et son nombre d'element séparé par un ;
-
+#Thelliez Flavien et Pouilly Christopher
 
 creeTab(){ #creeTab repertoire 
     local rep=$1
