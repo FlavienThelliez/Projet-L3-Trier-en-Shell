@@ -8,5 +8,6 @@ Mais comment dire
 Si ta envie de la faire fais le mais moi je touche plus à cette abomination sans nom qu'est le shell
 
 PSA : pour lancer le tri j'ai mis une archive.zip contenant des fichiers de tests
+
 //UPDATE 30/11/2018
 J'ai corrigé des bugs majeurs sur les paramètres, notre fichier normalement ne comporte aucun bug
