@@ -1,0 +1,36 @@
+Projet de Shell de Thelliez Flavien et Pouilly Christopher :
+
+Liste des fonctionnalités réalisées :
+-R : Tri le contenu de l'arborescence débutant au répertoire rep
+Ce tri va trier indépendemment tous les répertoires
+
+-R2 : Contraire du -R classique, il va trier tous les fichiers contenu 
+dans tous les répertoires les uns avec les autres
+
+-d : Tri dans l'ordre décroissant 
+
+-nsdletpg : Tous ces tris ont été réalisés, il est possible de tous les mettre ou pas (ou plus mais ca ne servirait
+à rien de mettre plusieurs fois la même lettre)
+
+On peut mettre l'arborescence que l'on veut comme repertoire source du moment qu'il est accessible
+
+Le tri choisi est un simple tri par selection du minimum.
+
+La méthode utilisé est l'utilisation d'une chaine de caractère traité comme un tableau.
+
+Cette méthode néanmoins comporte une faille qui est que le séparateur utilisé (ici #) va fausser le resultat si inclus 
+dans un nom de fichier.
+
+Pour ce qui est des restrictions quand à l'appel :
+	-le paramètre final est un répertoire (c'est le point de départ du tri, si non respecté, le programme
+ne s'executera pas et un message sera affiché)
+	-les options de tri peuvent être au nombre que l'utilisateur veut mais elles doivent forcément être valide
+(cad nsmletpg si contraire pareil que le précédent erreur + arrêt du programme)
+	-si des options contraires pour l'option de tri une erreur se produira
+	-pour les autres options (-R -R2 et -d) si elles sont présentes elles seront faites, si -R et -R2 sont présent simultannément
+l'option choisi sera la dernière donné
+	-toutes les options doivent contenir un -
+
+
+La quantité de travail de notre groupe est au alentour de 45% Flavien et 55% Christopher.
+Les erreurs et les arrêts de programme sont volontaires et personnalisé au problème en question
