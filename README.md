@@ -11,3 +11,6 @@ PSA : pour lancer le tri j'ai mis une archive.zip contenant des fichiers de test
 
 //UPDATE 30/11/2018
 J'ai corrigé des bugs majeurs sur les paramètres, notre fichier normalement ne comporte aucun bug
+
+//UPADTE 3/12/2018
+J'ai créer le 2eme tri mais il faut le tester
